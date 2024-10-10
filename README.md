@@ -12,7 +12,6 @@ Your ship's cargo consists of dice, and their total pip values represent your sh
 
 NOTE: **Landscape** is highly recommended for mobile.
 
-
 ## Contributing
 
 ### Installing Dependencies
