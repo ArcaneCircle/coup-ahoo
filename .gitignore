@@ -1,7 +1,12 @@
 .cache
 node_modules
 dist
-zipped
+dist-xdc
 .DS_Store
 .idea
 itch
+*~
+
+# Logs
+pnpm-debug.log*
+.pnpm-debug.log
