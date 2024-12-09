@@ -4,7 +4,8 @@
     "noEmit": true,
     "skipLibCheck": true,
     "sourceMap": false,
-    "baseUrl": "./"
+    "baseUrl": "./",
+    "types": ["node"]
   },
   "include": ["src/**/*", "typedefs/*"]
 }
