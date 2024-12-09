@@ -1,11 +1,10 @@
 {
   "compilerOptions": {
-    "lib": ["DOM", "ES2017"],
+    "lib": ["dom", "es2017"],
     "noEmit": true,
     "skipLibCheck": true,
     "sourceMap": false,
-    "baseUrl": "./",
-    "types": ["node"]
+    "baseUrl": "./"
   },
   "include": ["src/**/*", "typedefs/*"]
 }
