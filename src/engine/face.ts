@@ -38,7 +38,7 @@ export class Face extends Entity {
 
   private openess = 0;
   private targetOpeness = 0;
-  private closeTimer: NodeJS.Timeout;
+  private closeTimer: ReturnType<typeof setTimeout>;
 
   private left: Eye;
   private right: Eye;

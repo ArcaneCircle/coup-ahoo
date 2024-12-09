@@ -7,7 +7,7 @@ import { ZERO } from "./vector";
 
 export class WobblyText extends TextEntity {
   private time = 0;
-  private timer: NodeJS.Timeout;
+  private timer: ReturnType<typeof setTimeout>;
 
   constructor(
     game: Game,

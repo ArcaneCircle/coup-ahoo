@@ -10,7 +10,7 @@ export class Camera {
 
   private shakeStrength = 0;
   private shakeRotation = 0;
-  private timer: NodeJS.Timeout;
+  private timer: ReturnType<typeof setTimeout>;
 
   public shake(amount: number, duration: number, rotation = 0): void {
     this.shakeStrength = amount;

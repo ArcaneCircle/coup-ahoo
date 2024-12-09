@@ -7,7 +7,7 @@ import { Mouse } from "./mouse";
 export class Eye extends Entity {
   private openess = 1;
   private targetOpeness = 1;
-  private timer: NodeJS.Timeout;
+  private timer: ReturnType<typeof setTimeout>;
   private color = "#000";
 
   constructor(game: Game, x: number, y: number, size: number) {

@@ -39,7 +39,7 @@ export class Scene extends Container {
   private won: boolean;
   private trading: boolean;
   private mp: Mouse;
-  private prompted: NodeJS.Timeout;
+  private prompted: ReturnType<typeof setTimeout>;
   private extraRerollUsed: boolean;
   private clouds: { x: number; y: number; scale: number; speed: number }[];
 
