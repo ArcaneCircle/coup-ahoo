@@ -1,31 +1,21 @@
 {
   "private": true,
+  "type": "module",
   "license": "MIT",
   "scripts": {
     "start": "vite --port 3000",
     "emulator": "concurrently \"npm start\" \"webxdc-dev run http://localhost:3000\"",
     "fix": "prettier --write .",
-    "check": "prettier --check .",
+    "check": "prettier --check . && tsc",
     "build": "vite build"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^6.9.0",
-    "@typescript-eslint/parser": "^6.9.0",
-    "archiver": "^3.0.0",
-    "clean-webpack-plugin": "^3.0.0",
-    "concurrently": "^9.0.1",
-    "eslint": "^8.52.0",
-    "google-closure-compiler": "^20230802.0.0",
-    "html-minimizer-webpack-plugin": "^4.3.0",
-    "html-webpack-plugin": "^5.0.0",
-    "prettier": "^3.3.3",
-    "raw-loader": "^4.0.0",
-    "roadroller": "^2.1.0",
-    "ts-loader": "^9.0.0",
-    "typescript": "^4.0.0",
-    "url-loader": "^4.1.0",
-    "vite": "^4.5.5",
-    "webxdc-dev": "^0.17.0",
-    "webxdc-vite-plugins": "github:webxdc/webxdc-vite-plugins"
+    "@webxdc/types": "latest",
+    "@webxdc/vite-plugins": "latest",
+    "@webxdc/webxdc-dev": "latest",
+    "concurrently": "latest",
+    "prettier": "latest",
+    "typescript": "^5.7.2",
+    "vite": "latest"
   }
 }
