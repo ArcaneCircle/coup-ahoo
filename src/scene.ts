@@ -440,7 +440,7 @@ export class Scene extends Container {
       setTimeout(() => this.ship.sink(), 100);
       let info =
         window.webxdc.selfName + " was defeated in level " + this.level + " 💀";
-      window.webxdc.sendUpdate({ payload: null, info }, info);
+      window.webxdc.sendUpdate({ payload: null, info }, "");
       return;
     }
     if (!this.current.player) {
@@ -516,7 +516,7 @@ export class Scene extends Container {
           this.game.audio.win();
           this.info("You've defeated the whole 13th fleet!", "", "THE END?");
           let info = window.webxdc.selfName + " became the pirate king! 🏴‍☠️";
-          window.webxdc.sendUpdate({ payload: null, info }, info);
+          window.webxdc.sendUpdate({ payload: null, info }, "");
           this.promptSail();
         }, 1000);
         return;
